@@ -18,3 +18,5 @@ defmodule Recursion do
     end
   end
 end
+
+Enum.reduce([1, 2, 3], &+/2)
