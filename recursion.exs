@@ -1,5 +1,5 @@
 defmodule Recursion do
-  def sum(arg1, acc \\ 0)
-  def sum([head | tail], acc), do: sum(tail, acc + head)
-  def sum([], acc), do: acc
+  def sum(arg1), do: sum(arg1, 0)
+  defp sum([head | tail], acc), do: sum(tail, acc + head)
+  defp sum([], acc), do: acc
 end
