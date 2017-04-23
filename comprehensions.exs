@@ -1,7 +1,7 @@
 defmodule Triple do
   def pythagorean(n) when n > 0 do
-    for a <- 1..n,
-        b <- 1..n,
+    for a <- 1..n-2,
+        b <- 1..n-1,
         c <- 1..n,
         a + b + c <= n,
         a*a + b*b == c*c,
