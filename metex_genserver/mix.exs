@@ -22,7 +22,7 @@ defmodule MetexGenserver.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.13.0"},
-      {:poison,    "~> 3.1.0"}
+      {:json,    "~> 1.0.0"}
     ]
   end
 end
